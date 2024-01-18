@@ -1,5 +1,4 @@
 import 'package:bloc/bloc.dart';
-import 'package:cursach_app/core/errors/failures.dart';
 import 'package:cursach_app/src/on_boarding/domain/usecases/cache_first_timer.dart';
 import 'package:cursach_app/src/on_boarding/domain/usecases/check_if_user_is_first_timer.dart';
 import 'package:equatable/equatable.dart';

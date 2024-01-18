@@ -109,7 +109,9 @@ void main() {
             equals(
               Left<CacheFailure, dynamic>(
                 CacheFailure(
-                    message: 'Insufficient Storage Space', statusCode: 500),
+                  message: 'Insufficient Storage Space',
+                  statusCode: 500,
+                ),
               ),
             ),
           );

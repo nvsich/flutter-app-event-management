@@ -1,7 +1,6 @@
 import 'package:cursach_app/core/extensions/context_extension.dart';
 import 'package:cursach_app/src/on_boarding/domain/entities/page_content.dart';
 import 'package:cursach_app/src/on_boarding/presentation/cubit/on_boarding_cubit.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
