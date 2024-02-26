@@ -5,23 +5,23 @@ class LocalUser extends Equatable {
   const LocalUser({
     required this.uid,
     required this.email,
-    required this.fullname,
+    required this.fullName,
     this.profilePic,
-    this.organizationIds,
+    this.organizationIds = const [],
   });
 
   const LocalUser.empty()
       : this(
           uid: '',
           email: '',
-          fullname: '',
+          fullName: '',
           profilePic: '',
           organizationIds: const [],
         );
 
   final String uid;
   final String email;
-  final String fullname;
+  final String fullName;
   final String? profilePic;
   final List<String>? organizationIds;
 
@@ -30,6 +30,6 @@ class LocalUser extends Equatable {
 
   @override
   String toString() {
-    return 'LocalUser{uid: $uid, email: $email, fullname: $fullname }';
+    return 'LocalUser{uid: $uid, email: $email, fullname: $fullName }';
   }
 }

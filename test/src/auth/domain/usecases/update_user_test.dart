@@ -21,7 +21,7 @@ void main() {
   test('should call [AuthRepo.updateUser]', () async {
     when(
       () => repo.updateUser(
-        action: UpdateUserAction.fullname,
+        action: UpdateUserAction.displayName,
         userData: any<String>(named: 'userData'),
       ),
     ).thenAnswer((invocation) async => const Right(null));

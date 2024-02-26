@@ -96,7 +96,7 @@ void main() {
       );
 
       test(
-        'should return [CacheFailure] when call to localDataSource is failed',
+        'should return [CacheException] when call to localDataSource is failed',
         () async {
           when(() => localDataSource.checkIfUserIsFirstTimer()).thenThrow(
             const CacheException(message: 'Insufficient Storage Space'),

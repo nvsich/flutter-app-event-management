@@ -7,6 +7,7 @@ class MediaRes {
 
   // Images
   static const defaultBackground = '$_baseImages/default_background.jpg';
+  static const authBackground = '$_baseImages/auth_background.jpg';
 
   // Lottie
   static const underConstruction = '$_baseLottie/underConstruction.json';

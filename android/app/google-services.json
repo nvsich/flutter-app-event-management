@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "25019546587",
+    "project_id": "csevent-83fd4",
+    "storage_bucket": "csevent-83fd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25019546587:android:d3fce8594323bcc93ac5fe",
+        "android_client_info": {
+          "package_name": "com.example.cursach_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYAxbbl2Ma9UfkF0bnN79Ys4xsniPLWQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

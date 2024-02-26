@@ -8,6 +8,5 @@ class ResetPassword extends UsecaseWithParams<void, String> {
   final AuthRepo _repo;
 
   @override
-  ResultFuture<void> call(String params) async =>
-      _repo.resetPassword(email: params);
+  ResultFuture<void> call(String params) async => _repo.resetPassword(params);
 }

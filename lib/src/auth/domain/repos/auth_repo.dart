@@ -5,7 +5,7 @@ import 'package:cursach_app/src/auth/domain/entities/local_user.dart';
 abstract class AuthRepo {
   const AuthRepo();
 
-  ResultFuture<void> resetPassword({required String email});
+  ResultFuture<void> resetPassword(String email);
 
   ResultFuture<LocalUser> signIn({
     required String email,
@@ -15,7 +15,7 @@ abstract class AuthRepo {
   ResultFuture<void> signUp({
     required String email,
     required String password,
-    required String fullname,
+    required String fullName,
   });
 
   ResultFuture<void> updateUser({

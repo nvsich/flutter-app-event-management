@@ -22,7 +22,7 @@ void main() {
       () => repo.signUp(
         email: any(named: 'email'),
         password: any(named: 'password'),
-        fullname: any(named: 'fullname'),
+        fullName: any(named: 'fullName'),
       ),
     ).thenAnswer((invocation) async => const Right(null));
 
@@ -34,7 +34,7 @@ void main() {
       () => repo.signUp(
         email: tParams.email,
         password: tParams.password,
-        fullname: tParams.fullname,
+        fullName: tParams.fullName,
       ),
     ).called(1);
     verifyNoMoreInteractions(repo);

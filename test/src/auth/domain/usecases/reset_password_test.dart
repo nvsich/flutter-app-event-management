@@ -18,14 +18,14 @@ void main() {
   const tEmail = '';
 
   test('should call [AuthRepo.resetPassword]', () async {
-    when(() => repo.resetPassword(email: any(named: 'email')))
+    when(() => repo.resetPassword(any()))
         .thenAnswer((invocation) async => const Right(null));
 
     final result = await usecase(tEmail);
 
     expect(result, equals(const Right<dynamic, void>(null)));
 
-    verify(() => repo.resetPassword(email: tEmail)).called(1);
+    verify(() => repo.resetPassword(tEmail)).called(1);
     verifyNoMoreInteractions(repo);
   });
 }
